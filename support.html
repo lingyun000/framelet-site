@@ -1,1 +1,206 @@
-<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Framelet 支持与问题反馈 / Framelet Support"><title>支持 / Support · Framelet</title><link rel="stylesheet" href="style.css"></head><body><header><strong><a href="./">Framelet</a></strong><nav><a href="privacy.html">隐私 / Privacy</a><a href="terms.html">条款 / Terms</a><a href="support.html">支持 / Support</a></nav></header><main><h1>支持 / Support</h1><section><p class="lang">中文</p><p>使用 Framelet 时遇到问题，请先检查 macOS「系统设置 → 隐私与安全性」中相应的屏幕录制、辅助功能或麦克风授权。购买、续订、取消和退款由 Apple 管理，可从<a href="https://apps.apple.com/account/subscriptions">订阅管理</a>开始。</p><p>一般功能问题可在<a href="https://github.com/lingyun000/framelet-site/issues/new">公开问题反馈页</a>描述 macOS 版本、Framelet 版本、操作步骤和实际结果。此页面需要 GitHub 账号，且内容公开。<strong>请勿上传私人截图、录屏、OCR 文本、日志原件、Apple 账户信息或付款凭证。</strong>如问题涉及敏感内容，先只描述现象并要求私密联系渠道。</p><p><a href="privacy.html">隐私政策</a> · <a href="terms.html">使用条款</a></p></section><section id="english" lang="en"><p class="lang">English</p><p>For app issues, first check the relevant Screen Recording, Accessibility, or Microphone permission in macOS System Settings → Privacy &amp; Security. Apple manages purchases, renewals, cancellations, and refunds; start at <a href="https://apps.apple.com/account/subscriptions">subscription management</a>.</p><p>For general issues, use the <a href="https://github.com/lingyun000/framelet-site/issues/new">public issue form</a> and include your macOS version, Framelet version, steps, and observed result. A GitHub account is required and posts are public. <strong>Do not upload private screenshots, recordings, OCR text, raw logs, Apple account details, or payment records.</strong> For a sensitive issue, describe the symptom only and request a private contact method.</p><p><a href="privacy.html#english">Privacy policy</a> · <a href="terms.html#english">Terms</a></p></section></main><footer>© 2026 Framelet · <a href="./">Home</a></footer></body></html>
+<!doctype html>
+<html lang="zh-Hans" data-title-zh="使用支持与反馈 · Framelet" data-title-en="Support and feedback · Framelet" data-description-zh="Framelet 常见问题：权限、截图、滚动拼接、录屏、导出、翻译与问题反馈。" data-description-en="Framelet FAQ: permissions, screenshots, scrolling stitches, recording, export, translation and feedback.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Framelet 常见问题：权限、截图、滚动拼接、录屏、导出、翻译与问题反馈。">
+<title>使用支持与反馈 · Framelet</title>
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css?v=3">
+<script src="language.js?v=3" defer>
+</script>
+</head>
+<body>
+<div class="language-switch" role="group" aria-label="网站语言">
+<button type="button" data-lang="zh" aria-pressed="true">中文</button>
+<button type="button" data-lang="en" aria-pressed="false">English</button>
+</div>
+<noscript>
+<p class="noscript">中文与 English 均在下方。Both languages are shown below when JavaScript is off.</p>
+</noscript>
+<div id="chinese" data-language="zh" lang="zh-Hans">
+<a class="skip" href="#main-zh">跳到正文</a>
+<header>
+<a class="brand" href="index.html?lang=zh">
+<img src="assets/icon.png" width="40" height="40" alt="">Framelet</a>
+<nav aria-label="主导航">
+<a href="index.html?lang=zh">概览</a>
+<a href="guide.html?lang=zh">使用指南</a>
+<a href="support.html?lang=zh" aria-current="page">支持</a>
+</nav>
+</header>
+<main id="main-zh">
+<article class="document">
+<p class="eyebrow">FRAMELET / SUPPORT</p>
+<h1>需要帮助，从这里开始。</h1>
+<p class="lead">使用说明、常见问题与公开反馈入口。</p>
+<div class="actions">
+<a href="guide.html?lang=zh">查看使用指南</a>
+<a href="https://github.com/lingyun000/framelet-site/issues/new/choose">反馈问题</a>
+</div>
+<h2>常见问题</h2>
+<details>
+<summary>启动后为什么没有主窗口？</summary>
+<p>Framelet 默认从菜单栏与快捷键使用。点击菜单栏图标可截图、打开设置、帮助与结果；关闭辅助窗口不影响截图。</p>
+</details>
+<details>
+<summary>截图是黑色或提示权限？</summary>
+<p>打开“设置 → 权限”，按引导检查系统屏幕录制授权。macOS 提示重新打开时再重新打开 App。受保护内容可能无法捕获；不要删除 App 或重置全部系统权限。</p>
+</details>
+<details>
+<summary>快捷键没有反应？</summary>
+<p>可能与其他 App 冲突。从菜单栏重试注册，或在“设置 → 截图”录入新组合键；菜单栏的区域截图入口仍可使用。</p>
+</details>
+<details>
+<summary>只能选到整窗怎么办？</summary>
+<p>右键开启悬停识别并等待结果；辅助功能、App 提供的边界与可见内容都会影响识别。没有可靠子元素时使用整窗或手动拖选，不保证所有 App 都有可识别子内容。</p>
+</details>
+<details>
+<summary>滚动长图拼接失败？</summary>
+<p>选同一窗口内的正文，慢慢滚动并检查预览；动态内容、固定栏和重绘会影响拼接。按提示回滚到已验证位置，或完成保留已截内容。Esc 一次暂停、第二次取消。</p>
+</details>
+<details>
+<summary>录屏没有人声，GIF 没有声音？</summary>
+<p>开始前开启麦克风并选对设备，确认系统麦克风权限。GIF 格式不支持音频；需要声音请选择 MP4、MOV 或带音轨的 WebM。</p>
+</details>
+<details>
+<summary>WebM 导出失败？</summary>
+<p>发行候选包内置编码器，不要求用户安装 FFmpeg。可重试或改选 MP4/MOV/GIF；编辑保留。反馈时提供版本、格式与错误摘要，不附私人原片。</p>
+</details>
+<details>
+<summary>翻译为什么不可用？</summary>
+<p>可用方式随 macOS 和语言包变化。检查系统支持和语言包；网页备用需主动选择，再自行粘贴原文，不会自动提交。</p>
+</details>
+<details>
+<summary>内容会被上传吗？</summary>
+<p>截图、录屏与 OCR 在本机处理，没有开发者素材上传服务。系统翻译、网页翻译、Apple 购买与 GitHub 支持另有对应服务政策，详见隐私政策。</p>
+</details>
+<details>
+<summary>如何管理订阅或申请退款？</summary>
+<p>当前订阅购买和限额尚未开放，不承诺测试价格或免费试用。实际开放后由 Apple 购买页显示条款；管理续订用 Apple 订阅页，退款用 Apple 问题报告页。</p>
+</details>
+<h2>反馈时请提供</h2>
+<ul>
+<li>Framelet 版本与构建号（设置 → 关于）。</li>
+<li>macOS 版本、Mac 芯片、显示器数量与缩放设置。</li>
+<li>功能入口、操作步骤、预期结果和实际错误摘要。</li>
+<li>可以复现的虚构示例；日志只提供经检查的必要摘要。</li>
+</ul>
+<div class="notice">GitHub 反馈需要账号，内容公开。不要上传私人截图、录屏、OCR 文本、原始日志、账号或支付凭证。敏感问题先只描述现象，再请求私密联系渠道。</div>
+<p>
+<a href="https://github.com/lingyun000/framelet-site/issues">查看已有反馈</a>
+</p>
+<h2>购买与政策</h2>
+<p>
+<a href="https://apps.apple.com/account/subscriptions">Apple 订阅管理</a> · <a href="https://reportaproblem.apple.com/">Apple 退款与问题报告</a>
+</p>
+<p>
+<a href="privacy.html?lang=zh">隐私政策</a> · <a href="terms.html?lang=zh">使用条款</a>
+</p>
+<p class="muted">维护者：lingyun000 · 完整 Mac App Store 发行版尚在准备，当前网站不代表已通过审核。</p>
+</article>
+</main>
+<footer>
+<span>© 2026 Framelet</span>
+<nav aria-label="政策与源码">
+<a href="privacy.html?lang=zh">隐私政策</a>
+<a href="terms.html?lang=zh">使用条款</a>
+<a href="third-party-sources.html?lang=zh">第三方源码</a>
+<a href="https://github.com/lingyun000/framelet-site">GitHub</a>
+</nav>
+</footer>
+</div>
+<div id="english" data-language="en" lang="en">
+<a class="skip" href="#main-en">Skip to content</a>
+<header>
+<a class="brand" href="index.html?lang=en">
+<img src="assets/icon.png" width="40" height="40" alt="">Framelet</a>
+<nav aria-label="Main navigation">
+<a href="index.html?lang=en">Overview</a>
+<a href="guide.html?lang=en">Guide</a>
+<a href="support.html?lang=en" aria-current="page">Support</a>
+</nav>
+</header>
+<main id="main-en">
+<article class="document">
+<p class="eyebrow">FRAMELET / SUPPORT</p>
+<h1>Let’s keep your work moving.</h1>
+<p class="lead">Guides, common questions and a place to report issues.</p>
+<div class="actions">
+<a href="guide.html?lang=en">Read the guide</a>
+<a href="https://github.com/lingyun000/framelet-site/issues/new/choose">Report an issue</a>
+</div>
+<h2>Common questions</h2>
+<details>
+<summary>Why is there no main window?</summary>
+<p>Framelet starts in the menu bar and works through shortcuts. Click its icon to capture, open Settings or Help, or restore results. Closing auxiliary windows does not disable capture.</p>
+</details>
+<details>
+<summary>Why is my capture blank or permission blocked?</summary>
+<p>Check Screen Recording through Settings → Permissions. Reopen the app if macOS requests it. Protected content may be unavailable. Do not delete the app or reset all system permissions.</p>
+</details>
+<details>
+<summary>Why does the shortcut do nothing?</summary>
+<p>It may conflict with another app. Retry registration from the menu bar or change it in Settings → Capture. Capture Region remains available from the menu bar.</p>
+</details>
+<details>
+<summary>Why can I only select a whole window?</summary>
+<p>Right-click to enable hover detection and wait for results. Accessibility access, exposed boundaries and visible content affect detection. Use a window or manual region when reliable elements are unavailable.</p>
+</details>
+<details>
+<summary>What if a scrolling capture fails?</summary>
+<p>Select the main content of one window, scroll slowly and check the preview. Dynamic content, sticky bars and repainting affect stitching. Return to a confirmed position or finish with the captured portion. Esc pauses once and cancels on the second press.</p>
+</details>
+<details>
+<summary>Why is voice missing, or my GIF silent?</summary>
+<p>Enable the microphone, choose the right device and check macOS permission before starting. GIF has no audio; use MP4, MOV or WebM with an audio track.</p>
+</details>
+<details>
+<summary>What if WebM export fails?</summary>
+<p>The release candidate bundles its encoder; users do not need to install FFmpeg. Retry or choose MP4/MOV/GIF; edits are kept. Include the version, format and error summary in feedback, without private source media.</p>
+</details>
+<details>
+<summary>Why is translation unavailable?</summary>
+<p>Availability depends on macOS and language packs. Check system support and installed languages. The optional web fallback requires your action and manual pasting; text is not submitted automatically.</p>
+</details>
+<details>
+<summary>Is my content uploaded?</summary>
+<p>Screenshots, recordings and OCR are processed locally, without a developer-operated content upload service. System translation, web translation, Apple purchases and GitHub support have their own policies; see Privacy.</p>
+</details>
+<details>
+<summary>How do I manage subscriptions or request a refund?</summary>
+<p>Subscription purchases and limits are not currently enabled; test prices or trials are not promised. When available, Apple’s purchase sheet shows the terms. Use Apple’s subscription page for renewal management and Report a Problem for refund requests.</p>
+</details>
+<h2>What to include in feedback</h2>
+<ul>
+<li>Framelet version and build (Settings → About).</li>
+<li>macOS version, Mac chip, display count and scaling.</li>
+<li>Feature entry, steps, expected outcome and observed error summary.</li>
+<li>A fictional reproducible example; only necessary, reviewed log excerpts.</li>
+</ul>
+<div class="notice">GitHub requires an account and feedback is public. Do not upload private screenshots, recordings, OCR text, raw logs, account details or payment records. For sensitive issues, describe only the symptom and request a private contact method.</div>
+<p>
+<a href="https://github.com/lingyun000/framelet-site/issues">Browse existing issues</a>
+</p>
+<h2>Purchases and policies</h2>
+<p>
+<a href="https://apps.apple.com/account/subscriptions">Apple subscription management</a> · <a href="https://reportaproblem.apple.com/">Apple refunds and Report a Problem</a>
+</p>
+<p>
+<a href="privacy.html?lang=en">Privacy policy</a> · <a href="terms.html?lang=en">Terms</a>
+</p>
+<p class="muted">Maintainer: lingyun000 · The full Mac App Store release is in preparation; this website does not imply approval.</p>
+</article>
+</main>
+<footer>
+<span>© 2026 Framelet</span>
+<nav aria-label="Policies and source">
+<a href="privacy.html?lang=en">Privacy</a>
+<a href="terms.html?lang=en">Terms</a>
+<a href="third-party-sources.html?lang=en">Sources</a>
+<a href="https://github.com/lingyun000/framelet-site">GitHub</a>
+</nav>
+</footer>
+</div>
+</body>
+</html>

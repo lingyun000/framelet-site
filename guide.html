@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="zh-Hans" data-title-zh="使用指南 · Framelet" data-title-en="Usage guide · Framelet" data-description-zh="Framelet 双语指南：截图、悬停识别、标注、滚动截图、录屏、GIF、文字识别、翻译与快捷键。" data-description-en="Bilingual Framelet guide to screenshots, hover detection, annotation, scrolling capture, recording, GIF, OCR, translation and shortcuts.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Framelet 双语指南：截图、悬停识别、标注、滚动截图、录屏、GIF、文字识别、翻译与快捷键。">
+<title>使用指南 · Framelet</title>
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="style.css?v=3">
+<script src="language.js?v=3" defer>
+</script>
+</head>
+<body>
+<div class="language-switch" role="group" aria-label="网站语言">
+<button type="button" data-lang="zh" aria-pressed="true">中文</button>
+<button type="button" data-lang="en" aria-pressed="false">English</button>
+</div>
+<noscript>
+<p class="noscript">中文与 English 均在下方。Both languages are shown below when JavaScript is off.</p>
+</noscript>
+<div id="chinese" data-language="zh" lang="zh-Hans">
+<a class="skip" href="#main-zh">跳到正文</a>
+<header>
+<a class="brand" href="index.html?lang=zh">
+<img src="assets/icon.png" width="40" height="40" alt="">Framelet</a>
+<nav aria-label="主导航">
+<a href="index.html?lang=zh">概览</a>
+<a href="guide.html?lang=zh" aria-current="page">使用指南</a>
+<a href="support.html?lang=zh">支持</a>
+</nav>
+</header>
+<main id="main-zh">
+<article class="document">
+<p class="eyebrow">FRAMELET / GUIDE</p>
+<h1>从选区到成品。</h1>
+<p class="lead">每个功能的入口、操作和边界，都在这里。应用菜单中的“使用指南”也提供双语帮助。</p>
+<nav class="toc" aria-label="本页目录">
+<a href="#start-zh">开始使用</a>
+<a href="#capture-zh">选区、窗口与悬停识别</a>
+<a href="#annotate-zh">标注与图片交付</a>
+<a href="#scrolling-zh">滚动截图</a>
+<a href="#recording-zh">录屏、剪切与导出</a>
+<a href="#text-zh">文字识别与翻译</a>
+<a href="#settings-zh">设置、保存与退出</a>
+</nav>
+<section id="start-zh" class="guide-section">
+<h2>开始使用</h2>
+<ol>
+<li>启动 Framelet 后，点击菜单栏图标。主窗口默认隐藏，不影响截图。</li>
+<li>打开“设置 → 权限”，按引导开启屏幕录制。元素识别和滚动截图还需要辅助功能；麦克风只在录制人声时需要。</li>
+<li>在“设置 → 通用”选择跟随系统、中文或 English；未支持的系统语言回退中文。</li>
+<li>选择“区域截图”，或使用当前截图快捷键（默认 ⌘⇧2，可在设置修改）。</li>
+</ol>
+</section>
+<section id="capture-zh" class="guide-section">
+<h2>选区、窗口与悬停识别</h2>
+<ol>
+<li>拖动框选区域，或点击当前高亮窗口。松手后直接显示编辑工具条，无需再次确认。</li>
+<li>右键或 Control+单击切换悬停识别。首次默认关闭，此后记住选择；识别成功后点击实际显示的范围。</li>
+<li>在“设置 → 截图”配置独立延迟开关和 0–60000 毫秒等待时间。关闭延迟或输入 0 表示结果就绪即选择。</li>
+<li>选择期间滚轮不改变识别层级，也不会滚动后方页面。无法识别内部元素时，可选整窗或手动拖选。</li>
+<li>按 Esc 或切换 App 取消尚未提交的选区。受保护窗口或未提供边界的内容不保证可捕获或识别。</li>
+</ol>
+</section>
+<section id="annotate-zh" class="guide-section">
+<h2>标注与图片交付</h2>
+<ol>
+<li>用工具条添加矩形、椭圆、箭头、画笔、文字、编号、打码、批注和放大镜。选择图层可移动、调整和修改属性。</li>
+<li>⌘Z 撤销，⇧⌘Z 重做，Delete 删除选中标注。Esc 按当前操作逐层退出，不删除已完成图层。</li>
+<li>Return 或 ⌘C 复制，⌘S 保存 PNG。也可选“在窗口中编辑”，继续在普通窗口修改。失败时保留编辑。</li>
+<li>钉图保持在其他窗口上方：拖动图片移动，滚轮浏览长图，捏合或 ⌘滚轮缩放。悬停按钮提供 +/−、1:1 和适应屏幕，右上角可取消钉图或关闭。</li>
+<li>普通编辑、识别与录制结果只在打开或恢复时前置；切换到其他 App 后允许其他窗口覆盖。</li>
+</ol>
+</section>
+<section id="scrolling-zh" class="guide-section">
+<h2>滚动截图</h2>
+<ol>
+<li>从菜单栏选择“滚动截图”，框选同一来源窗口内的可滚动正文，尽量避开固定导航和动态内容。</li>
+<li>在选区内缓慢向下滚动；Framelet 受控发送滚动并检查图像重叠。观察旁边实时预览和接缝。</li>
+<li>采集中来源 App 的点击与按键暂时被屏蔽，暂停时仍保持保护。点控制条暂停或继续。</li>
+<li>按 Esc 一次暂停，第二次取消。点击 ✓ 完成后进入编辑，标注并复制或保存 PNG。</li>
+<li>无法可靠拼接时按提示回到已验证位置再继续，或完成并保留已截部分。不同网站、动画与固定栏可能影响结果，请检查成图。</li>
+</ol>
+</section>
+<section id="recording-zh" class="guide-section">
+<h2>录屏、剪切与导出</h2>
+<ol>
+<li>菜单栏选择“录屏”，拖选区域或单击窗口。确认麦克风与声音设置，再点红色按钮开始。</li>
+<li>可暂停与继续；点停止方块进入编辑。录制中的 Esc 只退出标注，不停止录制。</li>
+<li>在底部单轨时间轴选择范围，再点“确认剪切”生成新素材；拖选本身不改变原始素材。每个素材独立编辑，原素材保留。</li>
+<li>调整画面、圆角、留白、背景、鼠标、声音和标注时间。右侧导出页选择 MP4、MOV、GIF 或 WebM。GIF 没有声音。</li>
+<li>保存当前素材后可继续保存其他项；关闭工作区会清理临时素材，未保存内容会提示确认。发行候选包内置 WebM 编码器。</li>
+<li>目前不支持摄像头叠加、多轨任意编辑、批量导出或持久工程重开。窗口录制请保持窗口位置和大小不变。</li>
+</ol>
+</section>
+<section id="text-zh" class="guide-section">
+<h2>文字识别与翻译</h2>
+<ol>
+<li>从菜单栏“文字识别”选择截图或区域入口，使用同一套区域/窗口选择流程。</li>
+<li>识别在本机执行。结果窗口可编辑、复制或导出文字；关闭后从“查看识别与翻译结果”恢复。</li>
+<li>翻译依系统支持：macOS 15+ 使用原生翻译结果，macOS 14.4+ 可用系统弹窗。语言包可能需要下载。</li>
+<li>系统翻译不可用时，主动选择网页备用才会复制原文并打开翻译首页，不自动提交文字。</li>
+</ol>
+</section>
+<section id="settings-zh" class="guide-section">
+<h2>设置、保存与退出</h2>
+<ol>
+<li>设置分为通用、截图、权限、关于。通用设置里可修改语言、保存目录和入口显示；截图页可改快捷键、识别与等待时间。</li>
+<li>图片在所选位置保存；设置固定目录后可直接保存。录制输出默认在 ~/Movies/Framelet/，系统保存窗口也可选择其他位置。</li>
+<li>菜单栏与 Dock 图标都隐藏时，可从“应用程序”再次打开 Framelet 回到设置。退出请用菜单栏“退出 Framelet”；关闭帮助或设置不会退出。</li>
+</ol>
+</section>
+<section>
+<h2>常用快捷键</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>操作</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>区域截图（默认）</td>
+<td>
+<kbd>⌘⇧2</kbd>
+</td>
+</tr>
+<tr>
+<td>复制图片并完成</td>
+<td>
+<kbd>Return / ⌘C</kbd>
+</td>
+</tr>
+<tr>
+<td>保存 PNG</td>
+<td>
+<kbd>⌘S</kbd>
+</td>
+</tr>
+<tr>
+<td>撤销 / 重做</td>
+<td>
+<kbd>⌘Z / ⇧⌘Z</kbd>
+</td>
+</tr>
+<tr>
+<td>退出当前操作</td>
+<td>
+<kbd>Esc</kbd>
+</td>
+</tr>
+<tr>
+<td>关闭当前窗口</td>
+<td>
+<kbd>⌘W</kbd>
+</td>
+</tr>
+<tr>
+<td>钉图缩放</td>
+<td>
+<kbd>⌘+ / ⌘−</kbd>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<p>
+<a href="support.html?lang=zh">遇到问题？查看常见问题 →</a>
+</p>
+</article>
+</main>
+<footer>
+<span>© 2026 Framelet</span>
+<nav aria-label="政策与源码">
+<a href="privacy.html?lang=zh">隐私政策</a>
+<a href="terms.html?lang=zh">使用条款</a>
+<a href="third-party-sources.html?lang=zh">第三方源码</a>
+<a href="https://github.com/lingyun000/framelet-site">GitHub</a>
+</nav>
+</footer>
+</div>
+<div id="english" data-language="en" lang="en">
+<a class="skip" href="#main-en">Skip to content</a>
+<header>
+<a class="brand" href="index.html?lang=en">
+<img src="assets/icon.png" width="40" height="40" alt="">Framelet</a>
+<nav aria-label="Main navigation">
+<a href="index.html?lang=en">Overview</a>
+<a href="guide.html?lang=en" aria-current="page">Guide</a>
+<a href="support.html?lang=en">Support</a>
+</nav>
+</header>
+<main id="main-en">
+<article class="document">
+<p class="eyebrow">FRAMELET / GUIDE</p>
+<h1>From selection to a finished result.</h1>
+<p class="lead">Find each feature’s entry, steps and limits here. The app’s Usage Guide also provides bilingual help.</p>
+<nav class="toc" aria-label="On this page">
+<a href="#start-en">Get started</a>
+<a href="#capture-en">Area, window and hover detection</a>
+<a href="#annotate-en">Annotate and finish</a>
+<a href="#scrolling-en">Scrolling capture</a>
+<a href="#recording-en">Record, trim and export</a>
+<a href="#text-en">Text recognition and translation</a>
+<a href="#settings-en">Settings, files and quitting</a>
+</nav>
+<section id="start-en" class="guide-section">
+<h2>Get started</h2>
+<ol>
+<li>Launch Framelet and click its menu bar icon. The main window is hidden by default; capture is still available.</li>
+<li>Open Settings → Permissions and follow the Screen Recording guide. Element detection and scrolling capture also require Accessibility. Microphone access is only needed for your voice.</li>
+<li>In Settings → General, choose System, 中文 or English. Unsupported system languages fall back to Chinese.</li>
+<li>Choose Capture Region or use your capture shortcut (⌘⇧2 by default, customizable in Settings).</li>
+</ol>
+</section>
+<section id="capture-en" class="guide-section">
+<h2>Area, window and hover detection</h2>
+<ol>
+<li>Drag a region or click the highlighted window. Releasing shows the editing toolbar immediately; no second confirmation is needed.</li>
+<li>Right-click or Control-click to toggle hover detection. It starts off and remembers your choice. Click the range actually highlighted after detection.</li>
+<li>Set the separate delay switch and a 0–60000 ms wait in Settings → Capture. Turning delay off or entering 0 selects as soon as results are ready.</li>
+<li>While selecting, scrolling does not change element levels or scroll the underlying page. If internal elements cannot be detected, select the window or drag a region.</li>
+<li>Press Esc or switch apps to cancel an uncommitted selection. Protected windows and content without detectable boundaries may not be captured or recognized.</li>
+</ol>
+</section>
+<section id="annotate-en" class="guide-section">
+<h2>Annotate and finish</h2>
+<ol>
+<li>Use the toolbar for rectangles, ellipses, arrows, strokes, text, numbers, mosaic, callouts and magnifiers. Select a layer to move, resize or change its properties.</li>
+<li>⌘Z undoes, ⇧⌘Z redoes, and Delete removes selected marks. Esc exits the current operation in stages; it does not delete completed layers.</li>
+<li>Return or ⌘C copies; ⌘S saves a PNG. Choose Edit in Window to continue in a regular window. Edits are kept if an action fails.</li>
+<li>Pinned images stay above other windows. Drag to move, scroll through a long image, and pinch or ⌘-scroll to zoom. Hover controls offer +/−, 1:1 and Fit Screen; Unpin and Close are at the top right.</li>
+<li>Regular editors, text results and recording results come forward when opened or restored; other apps can cover them after you switch.</li>
+</ol>
+</section>
+<section id="scrolling-en" class="guide-section">
+<h2>Scrolling capture</h2>
+<ol>
+<li>Choose Scrolling Capture and select scrolling content inside one source window. Prefer the main content, away from fixed navigation and dynamic areas.</li>
+<li>Scroll down slowly inside the selection. Framelet sends controlled scrolling and checks image overlap. Watch the live preview and seams.</li>
+<li>Clicks and key presses to the source app are blocked during capture, including while paused. Use the controls to pause or resume.</li>
+<li>Press Esc once to pause and again to cancel. Click ✓ to finish, then annotate, copy or save a PNG.</li>
+<li>If stitching cannot be verified, follow the prompt to return to a confirmed position, or finish with the captured portion. Websites, animations and fixed bars can affect results; inspect the final image.</li>
+</ol>
+</section>
+<section id="recording-en" class="guide-section">
+<h2>Record, trim and export</h2>
+<ol>
+<li>Choose Record Screen, then drag an area or click a window. Check microphone and audio options, then click the red button to start.</li>
+<li>Pause and resume as needed. The square Stop button opens the editor. Esc during recording exits annotation; it does not stop recording.</li>
+<li>Select a range on the single-track timeline, then click Confirm Cut to create a new clip. Selecting alone does not change the original. Clips are edited independently and the original remains.</li>
+<li>Adjust canvas, corners, padding, background, cursor, audio and annotation timing. Use Export on the right for MP4, MOV, GIF or WebM. GIF has no audio.</li>
+<li>After saving one clip, you can save others. Closing the workspace clears temporary media and asks about unsaved work. The release candidate includes a WebM encoder.</li>
+<li>Camera overlays, arbitrary multitrack editing, batch export and reopening persistent projects are not supported. Keep a recorded window at its original size and position.</li>
+</ol>
+</section>
+<section id="text-en" class="guide-section">
+<h2>Text recognition and translation</h2>
+<ol>
+<li>Choose a screenshot or area option under Text Recognition in the menu bar, using the same area/window selection flow.</li>
+<li>Recognition runs locally. Edit, copy or export text in the result window. Reopen it with Show Text / Translation Result.</li>
+<li>Translation depends on system support: macOS 15+ can provide native results; macOS 14.4+ can use the system panel. Language packs may need downloading.</li>
+<li>If system translation is unavailable, choosing the web fallback copies the source and opens the translation home page without submitting the text.</li>
+</ol>
+</section>
+<section id="settings-en" class="guide-section">
+<h2>Settings, files and quitting</h2>
+<ol>
+<li>Settings has General, Capture, Permissions and About. General includes language, save location and entry visibility; Capture includes shortcuts, detection and wait time.</li>
+<li>Images are saved at your chosen location. Set a fixed folder for direct saving. Recordings default to ~/Movies/Framelet/; the save dialog can choose another location.</li>
+<li>If both menu bar and Dock icons are hidden, open Framelet from Applications to return to Settings. Choose Quit Framelet to quit; closing Help or Settings does not quit the app.</li>
+</ol>
+</section>
+<section>
+<h2>Useful shortcuts</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Capture Region (default)</td>
+<td>
+<kbd>⌘⇧2</kbd>
+</td>
+</tr>
+<tr>
+<td>Copy image and finish</td>
+<td>
+<kbd>Return / ⌘C</kbd>
+</td>
+</tr>
+<tr>
+<td>Save PNG</td>
+<td>
+<kbd>⌘S</kbd>
+</td>
+</tr>
+<tr>
+<td>Undo / redo</td>
+<td>
+<kbd>⌘Z / ⇧⌘Z</kbd>
+</td>
+</tr>
+<tr>
+<td>Exit the current operation</td>
+<td>
+<kbd>Esc</kbd>
+</td>
+</tr>
+<tr>
+<td>Close the current window</td>
+<td>
+<kbd>⌘W</kbd>
+</td>
+</tr>
+<tr>
+<td>Pinned-image zoom</td>
+<td>
+<kbd>⌘+ / ⌘−</kbd>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<p>
+<a href="support.html?lang=en">Need help? See common questions →</a>
+</p>
+</article>
+</main>
+<footer>
+<span>© 2026 Framelet</span>
+<nav aria-label="Policies and source">
+<a href="privacy.html?lang=en">Privacy</a>
+<a href="terms.html?lang=en">Terms</a>
+<a href="third-party-sources.html?lang=en">Sources</a>
+<a href="https://github.com/lingyun000/framelet-site">GitHub</a>
+</nav>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+name: 问题反馈 / Bug report
+description: 报告可复现问题，不上传私人内容 / Report a reproducible issue without private content
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "反馈公开。不要附私人截图、录屏、OCR 原文、原始日志、账号或交易凭证。Public feedback: do not attach private captures, OCR text, raw logs, account details or payment records."
+  - type: input
+    id: version
+    attributes:
+      label: Framelet 版本与构建 / Version and build
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: macOS、芯片、显示器 / macOS, chip, displays
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作步骤 / Steps to reproduce
+      description: 使用虚构示例 / Use fictional sample content
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: 预期与实际结果 / Expected and actual outcome
+    validations:
+      required: true
