@@ -6,7 +6,7 @@ Public product overview, bilingual usage guide, support, privacy, terms and WebM
 
 - `index.html`: product overview and bilingual component examples.
 - `guide.html`: permissions, capture, hover detection, annotation, pinning, scrolling, recording, trimming, OCR/translation, settings and shortcuts.
-- `support.html`: FAQ, safe public feedback and Apple purchase/support links.
+- `support.html`: direct email support (iitpoi@126.com), FAQ, optional public feedback and Apple purchase/support links.
 - `privacy.html`, `terms.html`: existing substantive policies with consistent bilingual navigation.
 - `third-party-sources.html`, `third-party-licenses/`: upstream source links, hashes, build information and licenses.
 
